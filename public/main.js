@@ -2,6 +2,12 @@ var palette = document.getElementsByClassName('palette')[0];
 var artArea = document.getElementsByClassName('artArea')[0];
 var color = "";
 var button = document.getElementsByTagName('button')[0];
+var generator = document.getElementsByClassName('generator')[0];
+
+generator.addEventListener('click', (event) => {
+  event.preventDefault();
+  console.log('hello!');
+})
 
 
 artArea.addEventListener('click', (event) => {
