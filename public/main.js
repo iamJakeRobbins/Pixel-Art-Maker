@@ -1,12 +1,12 @@
 var palette = document.getElementsByClassName('palette')[0];
 var artArea = document.getElementsByClassName('artArea')[0];
 var color = "";
-var button = document.getElementsByTagName('button')[0];
-var generator = document.getElementsByClassName('generator')[0];
 
-generator.addEventListener('click', (event) => {
+grid_generator.addEventListener('click', (event) => {
   event.preventDefault();
-  console.log('hello!');
+	for (i = 0; i < generator.value; i++) {
+		console.log(i)
+	}
 })
 
 
@@ -28,11 +28,14 @@ palette.addEventListener('click', (event) => {
   }
 })
 
-button.addEventListener('click', (event) => {
+clear.addEventListener('click', (event) => {
   event.preventDefault();
   var gridReset = artArea.children
-  for (var i = 0; i < gridReset.length; i++) {
-    gridReset[i].className = 'grid'
+	if (gridReset.length > 1){
+	  for (var i = 0; i < gridReset.length; i++) {
+	    gridReset[i].className = 'grid'
 
-  }
+			console.log(gridReset.length);
+	  }
+	}else{console.log('bork?');}
 })
