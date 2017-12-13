@@ -1,3 +1,6 @@
+body{
+text-align: center;
+}
 .grid, .false {
   border: 1px solid black;
   height: 50px;
@@ -5,15 +8,14 @@
   margin: 0px;
 }
 
-.h1 {
+h1 {
   color: GREEN;
 }
 
 .artArea {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 120px;
+	justify-content: center;
+  /* width: 10vw; */
 }
 
 .red {
@@ -32,7 +34,7 @@
   background-color: blue;
 }
 
-.pred {
+.pallete_Red {
   background-color: red;
   height: 50px;
   width: 50px;
@@ -40,7 +42,7 @@
   margin: 25px;
 }
 
-.pblue {
+.pallete_Blue {
   background-color: blue;
   height: 50px;
   width: 50px;
