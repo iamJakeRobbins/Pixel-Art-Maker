@@ -20,6 +20,7 @@ h1 {
 .row{
 	display: flex;
 }
+
 .red {
   border: 1px solid black;
   height: 50px;
