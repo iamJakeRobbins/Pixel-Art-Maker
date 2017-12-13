@@ -5,7 +5,16 @@ var color = "";
 grid_generator.addEventListener('click', (event) => {
   event.preventDefault();
 	for (i = 0; i < generator.value; i++) {
-		console.log(i)
+		let grid_row = document.createElement('div')
+		let container = document.createElement('div')
+		let div = document.createElement('div');
+		grid_row.setAttribute('class', 'grid-row')
+		div.setAttribute('class', 'grid')
+		artArea.append(grid_row)
+			for (var j = 0; j < generator.value; j++) {
+				grid_row.append(div)
+
+			}
 	}
 })
 
