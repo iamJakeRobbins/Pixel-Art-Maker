@@ -1,5 +1,6 @@
 body{
 text-align: center;
+width: 100vw;
 }
 .grid, .false {
   border: 1px solid black;
@@ -15,9 +16,10 @@ h1 {
 .artArea {
   display: flex;
 	justify-content: center;
-  /* width: 10vw; */
 }
-
+.row{
+	display: flex;
+}
 .red {
   border: 1px solid black;
   height: 50px;
